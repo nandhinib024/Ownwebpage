@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button
+{
+    font-style: bold;
+    text-align:center;
+    color:white;
+    background-color:royalblue;
+    border:none;
+    margin: 4px 200px;
+    cursor: pointer;
+    border-radius:4px;
+    padding: 10px  20px 10px 20px;
+}
+#rform
+{
+    background-color:white;
+    border-radius: 12px;
+}
+
+.box
+{
+    
+    display:block;
+    margin:auto;
+    margin-top:100px;
+    width:600px;
+    height:100px;
+}
+input[type=text] , input[type=email],select{
+    width:100%;
+    padding:10px 20px;
+    margin:8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+body{
+    background-image: url(image/ormbackgroung.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right
+{
+    position: absolute;
+    left: 10px;
+    width:300px;
+}
+    </style>
+    
+</head>
+<body   >
+    <div class="right">
+    <img src="image/Medscape_Logo.jpg" width="300" height="150"></div>
+    
+    <div class="box">
+    <fieldset name="rform" id="rform">
+        <form  id="form"> 
+            <label for="fname" ><b>First name </b></label><br><br>
+            <input   type="text" id="fname" name="fname" placeholder="Your first name" size=" 50"> <br><br>
+            <label for="lname" ><b>Last name </b> </label><br><br>
+            <input   type="text" id="lname" name="lname" placeholder="Your last name"  size="50"><br><br>
+            <label for="email"><b>Email </b></label><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" size="50">
+            <br><br>
+            
+            <label for="work"><b>Profession </b></label><br><br>
+            <select name="profession" id="work" >
+            <option value="Physician"> Physician</option>
+            <option value="Pharmacist">Pharmacist</option>
+            <option value="Media\Press">Media\Press</option>
+            <option value="Medical student">Medical student</option>
+            <option value="Nurse">Nurse</option>
+            </select>
+            <br><br>
+            <input type="checkbox" value="read and agree conditions" id=" agree" name="condition">
+            <label for="agree">I have read and agree to the waiver</label><br>
+            <br>
+            
+            <script src="web.js" ></script>
+            <button class="button" onclick="myFunction()">Create Account</button>
+            
+        </form>
+    </fieldset>
+    </div>
+    
+</body>
+</html>

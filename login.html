@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .button
+{
+    text-align:center;
+    color:white;
+    background-color:royalblue;
+    border:none;
+    margin: 4px 200px;
+    cursor: pointer;
+    border-radius:4px;
+    padding: 10px 50px 10px 50px;
+}
+#rform
+{
+    background-color:white;
+    border-radius: 12px;
+    padding:65px;
+}
+
+.box
+{
+    
+    display:block;
+    margin:auto;
+    margin-top:100px;
+    width:600px;
+    height:100px;
+}
+input[type=password] , input[type=email],select{
+    width:100%;
+    padding:10px 20px;
+    margin:8px 0px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+
+}
+body{
+    background-image: url(image/ormbackgroung.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.right
+{
+    position: absolute;
+    left: 10px;
+    width:300px;
+}
+h2{
+    text-align:center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+    </style>
+    
+</head>
+<body   >
+    <div class="right">
+    <img src="image/Medscape_Logo.jpg" width="300" height="150"></div>
+    
+    <div class="box">
+    <fieldset name="rform" id="rform">
+        <h2><b>Log In To Your Account</b></h2>
+        <br>
+        <form  id="form"> 
+            
+            <label for="email"><b>Email </b></label><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" >
+            <br><br>
+            <label for="password"><b>Password</b></label><br><br>
+            <input type="password" id="password" name="password"  placeholder="Enter your password">
+            <br><br>
+            
+           
+            <script src="web.js" ></script>
+            <button  class="button" onclick="myfunction()"><a style="color:white" href="index.html">LOGIN</a></button>
+           
+
+            
+        </form>
+    </fieldset>
+    </div>
+    
+</body>
+</html>
